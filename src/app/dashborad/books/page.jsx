@@ -17,6 +17,8 @@ import Loading from "@/components/booksComponents/Lodding";
 import Error from "@/components/booksComponents/ErrorState";
 import EmptyState from "@/components/booksComponents/EmptyState";
 
+import BookForm from "@/components/booksComponents/BookForm";
+
 export default function BooksPage() {
     const {
         books,
@@ -58,6 +60,7 @@ export default function BooksPage() {
                     view={view}
                     onViewChange={setView}
                 />
+                <BookForm />
             </div>
 
             {books.length === 0 ? (

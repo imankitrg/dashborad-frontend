@@ -1,3 +1,8 @@
+"use client"
+
+import { UpdateIcon, DeleteIcon } from "lucide-react"
+
+
 export default function BookCard({ book }) {
     return (
         <div>
